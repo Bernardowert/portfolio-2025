@@ -1,9 +1,9 @@
-import Image from "next/image";
+import { SectionHero } from "@/components/sections/hero";
 
 export default function Home() {
   return (
-    <div>
-      <h1>texto</h1>
-    </div>
+    <>
+     <SectionHero/>
+    </>
   );
 }

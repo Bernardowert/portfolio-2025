@@ -10,7 +10,7 @@ export function Header(){
                   <div className="flex items-center h-28 justify-between border-x border-dark-12 px-10">
                      <Link href="/" className="font-semibold text-lg">Bernardowert</Link>
                      <NavListing/>
-                     <Button>Contact Me</Button>
+                     <Button styleType="btnPrimary">Contact Me</Button>
                   </div>
             </ContainerGRID>
         </header>
