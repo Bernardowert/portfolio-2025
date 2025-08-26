@@ -10,7 +10,7 @@ export function SectionAbout(){
         <section className="pt-20">
             <ContainerGRID>
                  <HeadingTitle title="Eu sou Bernardo" subTitle="Sobre"/>
-                 <div className="flex items-center justify-between gap-5">
+                 <div className="flex items-center justify-between gap-5 mt-16">
                          <Image
                            src={mainPhoto}
                            alt="Foto do Bernardo"
