@@ -2,8 +2,8 @@ import { ButtonHTMLAttributes, ReactNode } from "react"
 import { twMerge } from "tailwind-merge";
 
 const btnStyles = {
-    btnPrimary: "py-4 px-6 rounded-xl border border-grey-100 bg-dark-12 transition-colors ease-linear [&:hover,&:focus]:bg-dark-08",
-    btnSecondary: "rounded-full bg-purple-50 py-4 px-12 transition-all [&:hover,&:focus]:bg-dark-08 "
+    btnPrimary: "inline-block py-4 px-6 rounded-xl border border-grey-100 bg-dark-12 transition-colors ease-linear [&:hover,&:focus]:bg-dark-08",
+    btnSecondary: "inline-block rounded-full bg-purple-50 py-4 px-12 transition-all [&:hover,&:focus]:bg-dark-08 "
 }
 
 type btnType = keyof typeof btnStyles;
