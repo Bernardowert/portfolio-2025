@@ -1,10 +1,10 @@
 import Image from "next/image";
-import { ContainerGRID } from "../containerGRID";
+import { ContainerGRID } from "../../containerGRID";
 
 
 
 import heroImg from "@/assets/hero-img.png";
-import { Button } from "../buttons";
+import { Button } from "../../buttons";
 import { MoveUpRight } from "lucide-react";
 import { MarqueeElement } from "./marquee";
 export function SectionHero(){

@@ -7,7 +7,7 @@ interface ContainerGRIDProps{
 }
 
 export function ContainerGRID({children,className}:ContainerGRIDProps){
-    const defaultClass = "w-full max-w-containerGRID mx-auto px-4";
+    const defaultClass = "w-full max-w-containerGRID desktop:max-w-containerGRID-Desktop mx-auto px-4";
     const combinedClass = twMerge(defaultClass,className);
     return(
         <div className={combinedClass}>

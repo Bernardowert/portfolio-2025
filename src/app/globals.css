@@ -67,13 +67,19 @@
    --color-grey-100: #2F2F37;
 
    --color-purple-50: #4A2CED;
+   --color-purple-60: #AEA1F7;
    --color-purple-90:#D6D0FB;
    --color-dark-12: #1C1C21;
    --color-dark-08: #131316;
    --color-dark-06: #0E0E10;
+   --color-dark-07:#070708;
 
    --max-width-containerGRID:82rem;
+   --max-width-containerGRID-Desktop:101.625rem;
    --max-width-textContact: 26.6875rem;
+   --max-width-imageAbout: 48.9375rem;
+
+   --height-imageAbout: 36.5625rem;
 
    --breakpoint-tablet:40rem;
    --breakpoint-laptop:64rem;

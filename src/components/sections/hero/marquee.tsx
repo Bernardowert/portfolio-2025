@@ -11,7 +11,7 @@ import typeScript from "@/assets/icons/icon-typescript.svg";
 import react from "@/assets/icons/icon-react.svg";
 import nextJS from "@/assets/icons/icon-nextjs.svg";
 import NodeJS from "@/assets/icons/icon-nodejs.svg";
-import { CardSkills } from "../cardSkills";
+import { CardSkills } from "../../cardSkills";
 
 
 const tecnologias = [
