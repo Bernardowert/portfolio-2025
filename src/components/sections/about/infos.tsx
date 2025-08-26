@@ -30,7 +30,7 @@ const listingContact = [
 
 export function AboutInfo(){
     return(
-         <div className="w-full max-w-imageAbout border border-dark-12">
+         <div className="w-full max-w-imageAbout border border-dark-12 rounded-4xl">
                     <div className="p-10  border-b border-dark-12">
                          <Title title="Introdução" />
                          <p className="text-lg text-grey-80 mt-5 ">My journey as a photographer has been a lifelong quest to capture the extraordinary in the ordinary, to freeze fleeting moments in time, and to share the world's beauty as I see it. Based in the enchanting landscapes of the USA, I find inspiration in every corner of this diverse and vibrant country. Join me as we embark on a visual odyssey, where each photograph tells a story, and every frame is a piece of my heart.</p>
