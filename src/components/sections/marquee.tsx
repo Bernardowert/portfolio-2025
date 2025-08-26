@@ -60,7 +60,7 @@ const tecnologias = [
 
 export function MarqueeElement(){
     return(
-        <Marquee pauseOnHover className="py-5 border-y border-dark-12 bg-dark-06" style={{ "--gap": "150px" } as React.CSSProperties}>
+        <Marquee pauseOnHover className="py-5 border-y border-dark-12 bg-dark-06 mt-10 laptop:mt-0" style={{ "--gap": "150px" } as React.CSSProperties}>
             {
                 tecnologias.map(({text, iconSrc}, index) => (
                     <CardSkills key={index} title={text} imageSrc={iconSrc} classname="max-w-7 h-7"/>
