@@ -13,10 +13,19 @@
    --color-grey-70: #AFB0B6;
 
    --color-purple-50: #4A2CED;
-
+   --color-dark-12: #1C1C21;
+   --color-dark-08: #131316;
+   
    --max-width-containerGRID:82rem;
 
    --breakpoint-tablet:40rem;
    --breakpoint-laptop:64rem;
    --breakpoint-desktop:80rem;
+}
+
+
+body{
+   background-color: #070708;
+   color: #fff;
+   font-family: var(--font-Manrope);
 }
