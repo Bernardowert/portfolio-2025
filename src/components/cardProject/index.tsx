@@ -1,6 +1,6 @@
 import { MoveUpRight } from "lucide-react";
 import Image, { StaticImageData } from "next/image";
-import { SocialList } from "../socialList";
+import { InfoProps, SocialList } from "../socialList";
 
 interface CardProps{
     imageSrc: string | StaticImageData;
@@ -8,9 +8,10 @@ interface CardProps{
     date:string;
     linkText:string;
     linkUrl:string;
+    dataLinks: InfoProps[];
 }
 
-export function CardProject({imageSrc, title, date, linkText, linkUrl}:CardProps){
+export function CardProject({imageSrc, title, date, linkText, linkUrl, dataLinks}:CardProps){
     return(
         <div className="w-full max-w-lg">
                 <div className="w-full relative flex items-center group justify-center overflow-hidden rounded-2xl h-imageAbout before:content-[''] before:absolute before:w-full before:h-full before:backdrop-blur-sm before:opacity-0 before:transition-all hover:before:opacity-100 ">
@@ -21,7 +22,7 @@ export function CardProject({imageSrc, title, date, linkText, linkUrl}:CardProps
                         className="w-full h-full"
                         />
                         <div className="absolute z-10 group-hover:opacity-100 opacity-0 transition-opacity ease-linear">
-                            <SocialList/>
+                            <SocialList infos={dataLinks}/>
                         </div>
                 </div>
                  <div className="flex items-center justify-between mt-5">

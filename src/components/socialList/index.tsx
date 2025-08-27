@@ -3,13 +3,12 @@ import Image, { StaticImageData } from "next/image";
 
 
 
-interface InfoProps{
+export interface InfoProps{
     icon:string | StaticImageData;
     href: string;
     title:string;
 }
-
-export interface ListProps{
+interface ListProps{
     infos:InfoProps[];
 }
 
