@@ -1,10 +1,14 @@
 import Image from "next/image";
-
-
-import star from "@/assets/icons/star.png";
 import Link from "next/link";
+
 import { SocialList } from "@/components/socialList";
 import { Button } from "@/components/buttons";
+
+import star from "@/assets/icons/star.png";
+import linkedin from "@/assets/icons/linkedin.png";
+import facebook from "@/assets/icons/facebook-icon.png";
+import github from "@/assets/icons/github-icon.png";
+
 
 
 export const Title = ({title}:{title:string}) => {
@@ -28,6 +32,24 @@ const listingContact = [
 ]
 
 
+const list = [
+     {
+        icon:linkedin,
+        href: "https://www.linkedin.com/in/bernardo-almeida-211b05246/",
+        title:"Linkedin"
+     },
+     {
+        icon:facebook,
+        href: "https://www.linkedin.com/in/bernardo-almeida-211b05246/",
+        title:"Facebook"
+     },
+     {
+        icon:github,
+        href: "https://github.com/Bernardowert",
+        title:"Github"
+     }
+]
+
 export function AboutInfo(){
     return(
          <div className="w-full max-w-imageAbout border border-dark-12 rounded-4xl">
@@ -49,7 +71,7 @@ export function AboutInfo(){
                         }
                        </ul>
                         <div className="flex items-center gap-24">
-                              <SocialList/>
+                              <SocialList infos={list}/>
                               <div className="flex items-center gap-5">
                                   <Button styleType="btnPrimary" className="px-10">Let’s Work</Button>
                                   <Button styleType="btnPrimary" className="px-10">Download CV</Button>
