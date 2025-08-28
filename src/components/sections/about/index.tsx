@@ -7,7 +7,7 @@ import { AboutInfo } from "./infos";
 
 export function SectionAbout(){
     return(
-        <section className="pt-20">
+        <section className="pt-20" id="s-about">
             <ContainerGRID>
                  <HeadingTitle title="Eu sou Bernardo" subTitle="Sobre"/>
                  <div className="flex items-center justify-between gap-5 mt-16">

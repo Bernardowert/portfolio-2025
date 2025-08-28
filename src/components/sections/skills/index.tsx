@@ -97,7 +97,7 @@ const skills = [
 
 export function SectionSkills(){
     return(
-        <section className="py-24">
+        <section className="py-24" id="s-skills">
             <ContainerGRID>
                  <HeadingTitle title="Tecnologias que uso no meu dia a dia" subTitle="Tecnologias"/>
                  <div className="grid grid-cols-5 gap-10 mt-24 bg-dark-06 border border-dark-12 py-10 px-3 rounded-2xl">

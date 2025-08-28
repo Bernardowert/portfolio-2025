@@ -5,10 +5,11 @@ import { Button } from "../buttons";
 import Image from "next/image";
 
 import iconMobile from "@/assets/icons/mobile-icon.png";
+import { HeaderComponent } from "./headerComponent";
 
 export function Header(){
     return(
-        <header className="w-full h-28 fixed top-0 left-0 z-50 border-b border-dark-12">
+        <HeaderComponent>
             <ContainerGRID>
                   <div className="flex items-center h-28 justify-between border-x border-dark-12 pl-4  laptop:px-7 desktop:px-10">
                      <Link href="/" className="font-semibold text-lg">Bernardowert</Link>
@@ -24,6 +25,6 @@ export function Header(){
                      </button>
                   </div>
             </ContainerGRID>
-        </header>
+        </HeaderComponent>
     )
 }
