@@ -1,6 +1,6 @@
 'use client'
 import Link from "next/link";
-import { MouseEvent, useEffect, useState } from "react";
+import { MouseEvent, useEffect, useRef, useState } from "react";
 
 
 const listing = [
@@ -27,10 +27,8 @@ export function NavListing(){
     const[isClicked, setIsClicked] = useState(false);
 
      useEffect(() => {
-
+          if(isClicked) return;
           const handleScroll = () => {
-            if(isClicked) return;
-
               listing.forEach(({path}) => {
                  const section = document.getElementById(path);
 
