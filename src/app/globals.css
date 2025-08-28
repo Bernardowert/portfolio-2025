@@ -62,6 +62,7 @@
 
 @theme static{
    --color-grey-90: #E4E4E6;
+   --color-grey-95: #F2F2F3;
    --color-grey-80: #CACACE;
    --color-grey-70: #AFB0B6;
    --color-grey-100: #2F2F37;
@@ -78,12 +79,15 @@
    --max-width-containerGRID-Desktop:101.625rem;
    --max-width-textContact: 26.6875rem;
    --max-width-imageAbout: 48.9375rem;
+   --max-width-paragraphContact: 33.4375rem;
+   --max-width-formContact: 61.3125rem;
 
    --height-imageAbout: 36.5625rem;
 
    --breakpoint-tablet:40rem;
    --breakpoint-laptop:64rem;
    --breakpoint-desktop:80rem;
+
 }
 
 body{
