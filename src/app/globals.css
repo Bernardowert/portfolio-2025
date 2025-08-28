@@ -96,6 +96,12 @@ body{
    font-family: var(--font-Manrope);
 }
 
+html,
+body{
+  overflow-x: hidden;
+}
+
+
 button{
   cursor: pointer;
 }

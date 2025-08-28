@@ -10,12 +10,12 @@ export function SectionAbout(){
         <section className="pt-20" id="s-about">
             <ContainerGRID>
                  <HeadingTitle title="Eu sou Bernardo" subTitle="Sobre"/>
-                 <div className="flex items-center justify-between gap-5 mt-16">
+                 <div className="flex flex-col items-center justify-between gap-5 mt-16 laptop:flex-row">
                          <Image
                            src={mainPhoto}
                            alt="Foto do Bernardo"
                            title="Bernardo"
-                           className="w-full max-w-imageAbout h-imageAbout object-cover rounded-2xl"
+                           className="w-full h-96 object-cover rounded-2xl tablet:max-w-imageAbout tablet:h-imageAbout"
                           />
 
                           <AboutInfo/>

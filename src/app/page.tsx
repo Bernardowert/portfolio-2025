@@ -12,9 +12,9 @@ export default function Home() {
      <SectionHero/>
      <SectionAbout/>
      <SectionSkills/>
-     <SectionHabilidades/>
+     {/* <SectionHabilidades/>
      <SectionPortfolio/>
-     <SectionContact/>
+     <SectionContact/> */}
     </>
   );
 }

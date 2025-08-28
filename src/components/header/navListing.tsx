@@ -1,6 +1,6 @@
 'use client'
 import Link from "next/link";
-import { MouseEvent, useEffect, useRef, useState } from "react";
+import { MouseEvent, useEffect, useState } from "react";
 
 
 const listing = [
@@ -48,7 +48,6 @@ export function NavListing(){
 
           return () => {
               window.removeEventListener("scroll",handleScroll);
-              console.log("desmontado");
           }
      },[isClicked])
 

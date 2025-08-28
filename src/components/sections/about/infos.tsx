@@ -55,12 +55,12 @@ export function AboutInfo(){
          <div className="w-full max-w-imageAbout border border-dark-12 rounded-4xl">
                     <div className="p-10  border-b border-dark-12">
                          <Title title="Introdução" />
-                         <p className="text-lg text-grey-80 mt-5 ">My journey as a photographer has been a lifelong quest to capture the extraordinary in the ordinary, to freeze fleeting moments in time, and to share the worlds beauty as I see it. Based in the enchanting landscapes of the USA, I find inspiration in every corner of this diverse and vibrant country. Join me as we embark on a visual odyssey, where each photograph tells a story, and every frame is a piece of my heart.</p>
+                         <p className="tablet:text-lg text-grey-80 mt-5 ">My journey as a photographer has been a lifelong quest to capture the extraordinary in the ordinary, to freeze fleeting moments in time, and to share the worlds beauty as I see it. Based in the enchanting landscapes of the USA, I find inspiration in every corner of this diverse and vibrant country. Join me as we embark on a visual odyssey, where each photograph tells a story, and every frame is a piece of my heart.</p>
                     </div>
 
                       <div className="p-10 space-y-10">
                       <Title title="Contato" />
-                       <ul className="flex items-center gap-24">
+                       <ul className="flex flex-col items-start gap-8 laptop:flex-row laptop:items-center laptop:gap-24">
                         {
                             listingContact.map(({title, href, urlText}, index) => (
                             <li key={index}>
@@ -70,11 +70,11 @@ export function AboutInfo(){
                             ))
                         }
                        </ul>
-                        <div className="flex items-center gap-24">
+                        <div className="flex flex-col items-center gap-8 laptop:flex-row laptop:gap-24">
                               <SocialList infos={list}/>
-                              <div className="flex items-center gap-5">
-                                  <Button styleType="btnPrimary" className="px-10">Let’s Work</Button>
-                                  <Button styleType="btnPrimary" className="px-10">Download CV</Button>
+                              <div className="flex w-full flex-col items-center gap-5 laptop:flex-row">
+                                  <Button styleType="btnPrimary" className="px-10 w-full">Let’s Work</Button>
+                                  <Button styleType="btnPrimary" className="px-10 w-full">Download CV</Button>
                               </div>
                         </div>
                       </div>

@@ -13,9 +13,10 @@ interface ListProps{
 }
 
 
+
 export function SocialList({infos}:ListProps){
     return(
-        <ul className="flex items-center gap-4 p-2.5 rounded-full border border-dark-12">
+        <ul className="flex items-center w-full justify-center gap-4 p-2.5 rounded-full border border-dark-12 laptop:w-auto laptop:justify-normal">
               {
                   infos && (
                         infos.map(({icon, href, title}, index) => (
