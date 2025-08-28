@@ -14,14 +14,14 @@ interface CardProps{
 export function CardProject({imageSrc, title, date, linkText, linkUrl, dataLinks}:CardProps){
     return(
         <div className="w-full max-w-lg">
-                <div className="w-full relative flex items-center group justify-center overflow-hidden rounded-2xl h-imageAbout before:content-[''] before:absolute before:w-full before:h-full before:backdrop-blur-sm before:opacity-0 before:transition-all hover:before:opacity-100 ">
+                <div className="w-full relative flex items-center group justify-center overflow-hidden rounded-2xl h-96 laptop:h-imageAbout before:content-[''] before:absolute before:w-full before:h-full before:backdrop-blur-sm before:opacity-0 before:transition-all [&:hover,&:focus]:before:opacity-100 ">
                         <Image
                         src={imageSrc}
                         alt={`Imagem do projeto ${title}`}
                         title={`${title}`}
-                        className="w-full h-full"
+                        className="w-full h-full object-cover"
                         />
-                        <div className="absolute z-10 group-hover:opacity-100 opacity-0 transition-opacity ease-linear">
+                        <div className="absolute z-10 group-[&:hover,&:focus]:opacity-100 pointer-events-none group-[&:hover,&:focus]:pointer-events-auto opacity-0 transition-opacity ease-linear">
                             <SocialList infos={dataLinks}/>
                         </div>
                 </div>

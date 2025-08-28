@@ -123,7 +123,7 @@ const allProjects = [
 
 export function Projects(){
     return(
-        <div className="mt-20 grid grid-cols-3 gap-x-8 gap-y-10">
+        <div className="mt-20 grid tablet:grid-cols-2 justify-items-center laptop:grid-cols-3 gap-x-8 gap-y-10">
              {
                 allProjects.map(({imageSrc, title, date, linkText, linkUrl, listing},index) => (
                     <CardProject key={index} imageSrc={imageSrc} title={title} date={date} linkText={linkText} linkUrl={linkUrl} dataLinks={listing}/>

@@ -10,7 +10,7 @@ export function SectionHabilidades(){
         <section>
             <ContainerGRID>
                 <HeadingTitle title="Minhas Soft Skills" subTitle="Habilidades"/>
-                <div className="flex items-center justify-between mt-20">
+                <div className="flex flex-col laptop:flex-row gap-8 items-center justify-between mt-20">
                         <div className="w-full max-w-imageAbout">
                         <h3 className="text-4xl font-medium text-grey-80 mb-6">Habilidades</h3>
                         <p className="text-lg text-grey-90 mb-12">descricao</p>
@@ -23,7 +23,7 @@ export function SectionHabilidades(){
                         src={secondPhoto}
                         alt="Foto do bernardo"
                         title="Bernardo"   
-                        className="w-full max-w-imageAbout h-imageAbout object-cover rounded-3xl rounded-bl-[100px] filter brightness-75"                    
+                        className="w-full max-w-imageAbout laptop:h-imageAbout h-96 object-cover rounded-3xl laptop:rounded-bl-[100px] filter brightness-75"                    
                        />
                 </div>
             </ContainerGRID>

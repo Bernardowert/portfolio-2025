@@ -49,7 +49,7 @@ export function FormContact(){
 
 
     return(
-         <form onSubmit={handleSubmit(formSubmit)} className="w-full max-w-formContact grid grid-cols-2 gap-12">
+         <form onSubmit={handleSubmit(formSubmit)} className="w-full max-w-formContact grid gap-12 laptop:grid-cols-2">
             <Input labelName="First Name" type="text" placeholder="First Name" name="name" error={errors.name?.message} register={register}/>
             <Input labelName="Email" type="email" placeholder="Email Address" name="email" error={errors.email?.message} register={register}/>
             <Input labelName="Phone Number" type="number" placeholder="Phone Number" name="phoneNumber" error={errors.phoneNumber?.message} register={register}/>
