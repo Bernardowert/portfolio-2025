@@ -13,7 +13,7 @@ export function SectionHabilidades(){
                 <div className="flex items-center justify-between mt-20">
                         <div className="w-full max-w-imageAbout">
                         <h3 className="text-4xl font-medium text-grey-80 mb-6">Habilidades</h3>
-                        <p className="text-lg text-grey-90 mb-12">Our event photography service is dedicated to capturing the magic of your special occasions. Whether it's a wedding, corporate event, or milestone celebration, we're there to document every heartfelt moment. We blend into the background, ensuring natural and candid shots that reflect the emotions of the day.</p>
+                        <p className="text-lg text-grey-90 mb-12">descricao</p>
                         <div>
                                 <strong className="text-lg font-medium text-grey-80 mb-5 block">Service Highlights</strong>
                                 <Highlights/>

@@ -3,7 +3,6 @@ import { ArrowUpRight } from "lucide-react";
 import Link from "next/link";
 import { FormContact } from "./form";
 
-export default function generateMetadata()
 
 const contact = [
     {
@@ -39,7 +38,7 @@ export function SectionContact(){
                 <div className="mt-8 pt-8 border-t border-dark-12 flex items-center justify-between">
                      <div className="w-full max-w-paragraphContact">
                         <h2 className="text-5xl font-semibold text-grey-90 mb-4">Send Me a Message</h2>
-                        <p className="text-lg text-grey-90 leading-snug">Have a specific inquiry or message for us? Please use the contact form below, and we'll get back to you promptly.</p>
+                        <p className="text-lg text-grey-90 leading-snug">Have a specific inquiry or message for us? Please use the contact form below, and well get back to you promptly.</p>
                      </div>
                      <FormContact/>
                 </div>

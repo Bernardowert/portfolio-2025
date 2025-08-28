@@ -3,9 +3,8 @@ import { zodResolver } from "@hookform/resolvers/zod"
 import { useForm } from "react-hook-form"
 import z from "zod"
 import { Input } from "./input"
-import { Button } from "@/components/buttons"
 import { ArrowUpRight, Loader } from "lucide-react"
-import { toast, Toaster } from "sonner"
+import { toast } from "sonner"
 
 
 const schema = z.object({
@@ -19,7 +18,7 @@ export type FormSchema = z.infer<typeof schema>
 
 
 export function FormContact(){
-    const {register, handleSubmit, formState: {errors, isSubmitSuccessful, isSubmitting}, reset} = useForm<FormSchema>({
+    const {register, handleSubmit, formState: {errors, isSubmitting}, reset} = useForm<FormSchema>({
         resolver: zodResolver(schema),
         mode: "onChange"
     })
