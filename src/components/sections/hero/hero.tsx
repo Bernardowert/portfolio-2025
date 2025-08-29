@@ -7,6 +7,9 @@ import heroImg from "@/assets/hero-img.png";
 import { Button } from "../../buttons";
 import { MoveUpRight } from "lucide-react";
 import { MarqueeElement } from "./marquee";
+
+
+
 export function SectionHero(){
     return(
         <section className="pt-32 laptop:pt-28" id="s-hero">
