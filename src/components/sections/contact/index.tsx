@@ -26,7 +26,7 @@ export function SectionContact(){
                             <h2 className="laptop:text-5xl text-4xl font-semibold text-grey-90">Send Me a Message</h2>
                             <p className="laptop:text-lg text-grey-90 leading-snug">Have a specific inquiry or message for us? Please use the contact form below, and well get back to you promptly.</p>
                         </div>
-                            <div className="flex items-center flex-col gap-4 laptop:gap-12">
+                            <div className="flex items-center flex-col gap-4 laptop:flex-row laptop:gap-12">
                           {
                             contact.map(({text, link}, index) => (
                                 <Link key={index} href={link} className="flex items-center gap-2.5 border-b border-dark-12 group">

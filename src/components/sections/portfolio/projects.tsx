@@ -1,12 +1,14 @@
-import logo01 from "@/assets/icons/project01.png";
 import { CardProject } from "@/components/cardProject";
+import logo01 from "@/assets/icons/project01.png";
+import project01 from "@/assets/project-imgs/project-01.png";
+import project02 from "@/assets/project-imgs/project-02.png";
 
 import github from "@/assets/icons/github-icon.png";
 
 
 const allProjects = [
     {
-        imageSrc: logo01,
+        imageSrc: project01,
         title:"Faces of Resilience",
         date:"2023",
         linkText:"Acessar",
@@ -25,7 +27,7 @@ const allProjects = [
         ]
     },
      {
-        imageSrc: logo01,
+        imageSrc: project02,
         title:"Faces of Resilience",
         date:"2023",
         linkText:"Acessar",

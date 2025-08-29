@@ -9,7 +9,7 @@ export function SectionAbout(){
     return(
         <section className="pt-20" id="s-about">
             <ContainerGRID>
-                 <HeadingTitle title="Eu sou Bernardo" subTitle="Sobre"/>
+                 <HeadingTitle title="Sobre Mim" subTitle="Sobre"/>
                  <div className="flex flex-col items-center justify-between gap-5 mt-16 laptop:flex-row">
                          <Image
                            src={mainPhoto}
