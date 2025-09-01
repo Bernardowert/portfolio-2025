@@ -50,10 +50,10 @@ export function FormContact(){
 
     return(
          <form onSubmit={handleSubmit(formSubmit)} className="w-full max-w-formContact grid gap-12 laptop:grid-cols-2">
-            <Input labelName="First Name" type="text" placeholder="First Name" name="name" error={errors.name?.message} register={register}/>
+            <Input labelName="Seu nome" type="text" placeholder="Nome" name="name" error={errors.name?.message} register={register}/>
             <Input labelName="Email" type="email" placeholder="Email Address" name="email" error={errors.email?.message} register={register}/>
-            <Input labelName="Phone Number" type="number" placeholder="Phone Number" name="phoneNumber" error={errors.phoneNumber?.message} register={register}/>
-            <Input labelName="Your Message" type="text" placeholder="Message" name="message" error={errors.message?.message} register={register}/>
+            <Input labelName="Numero de telefone(opcional)" type="number" placeholder="telefone" name="phoneNumber" error={errors.phoneNumber?.message} register={register}/>
+            <Input labelName="Sua mensagem" type="text" placeholder="mensagem" name="message" error={errors.message?.message} register={register}/>
             <button disabled={isSubmitting} className="disabled:opacity-50 disabled:cursor-not-allowed flex items-center max-w-96 gap-3 group">
                 <span className="text-2xl transition-opacity ease-linear group-[&:hover,&:focus]:opacity-70">{isSubmitting ? "Enviando mensagem..." : "Enviar mensagem"}</span>
 

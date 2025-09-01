@@ -5,21 +5,21 @@ import { MouseEvent, useEffect, useState } from "react";
 
 const listing = [
      {
-        text: "Home",
+        text: "Inicio",
         path: "s-hero"
      },
      {
-        text: "About Me",
+        text: "Sobre mim",
         path: "s-about"
      },
-     {
-        text: "Portfolio",
-        path: "s-portfolio"
+    {
+        text: "Skills",
+        path: "s-skills"
      },
      {
-        text: "Services",
-        path: "s-skills"
-     }
+        text: "Projetos",
+        path: "s-portfolio"
+     },
 ]
 
 export function NavListing(){

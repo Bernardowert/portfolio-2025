@@ -12,13 +12,14 @@ interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement>{
     children:ReactNode;
     className?:string;
     styleType: btnType;
+    onclickFunction?: () => void;
 }
 
-export function Button({children, className, styleType}:ButtonProps){
+export function Button({children, className, styleType, onclickFunction}:ButtonProps){
     const defaultClass = btnStyles[styleType];
     const combinedClass = twMerge(defaultClass, className);
     return(
-        <button className={combinedClass}>
+        <button onClick={onclickFunction} className={combinedClass}>
            {children}
         </button> 
     )

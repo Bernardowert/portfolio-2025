@@ -17,14 +17,14 @@ const contact = [
 
 export function SectionContact(){
     return(
-        <section className="py-32">
+        <section className="py-32" id="s-contact">
             <ContainerGRID>          
 
                 <div className="pt-8 border-t border-dark-12 flex items-center flex-col gap-12 laptop:gap-0 laptop:flex-row justify-between">
                      <div className="w-full laptop:max-w-paragraphContact">
                         <div className="mb-7 space-y-4 text-center laptop:text-start">
-                            <h2 className="laptop:text-5xl text-4xl font-semibold text-grey-90">Send Me a Message</h2>
-                            <p className="laptop:text-lg text-grey-90 leading-snug">Have a specific inquiry or message for us? Please use the contact form below, and well get back to you promptly.</p>
+                            <h2 className="laptop:text-5xl text-4xl font-semibold text-grey-90">Mande sua mensagem</h2>
+                            <p className="laptop:text-lg text-grey-90 leading-snug">Preencha o formulário ao lado e fale comigo! Eu irei responder o mais breve possivel.</p>
                         </div>
                             <div className="flex items-center flex-col gap-4 laptop:flex-row laptop:gap-12">
                           {
