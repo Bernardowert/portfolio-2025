@@ -4,6 +4,7 @@ import "./globals.css";
 import { Header } from "@/components/header";
 import { Toaster } from "sonner";
 import { Footer } from "@/components/footer";
+import { AosInit } from "@/lib/aosInit";
 
 const manRope = Manrope({
   variable: "--font-Manrope",
@@ -28,9 +29,13 @@ export default function RootLayout({
       <body
         className={`${manRope.variable} antialiased`}
       >
+       <Toaster/>
+       <AosInit/>
+
         <Header/>
-        {children} <Toaster/>
+        {children}   
         <Footer/>
+        
       </body>
     </html>
   );

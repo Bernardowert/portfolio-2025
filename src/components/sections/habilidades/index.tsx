@@ -13,9 +13,9 @@ export function SectionHabilidades(){
                 <div className="flex flex-col laptop:flex-row gap-8 items-center justify-between mt-20">
                         <div className="w-full max-w-imageAbout">
                         <h3 className="text-4xl font-medium text-grey-80 mb-6">Habilidades</h3>
-                        <p className="text-lg text-grey-90 mb-12">descricao</p>
+                        <p className="text-lg text-grey-90 mb-12">Estas são as habilidades que me definem como profissional e me ajudam a entregar resultados consistentes, com foco em colaboração, comunicação e crescimento contínuo.</p>
                         <div>
-                                <strong className="text-lg font-medium text-grey-80 mb-5 block">Service Highlights</strong>
+                                <strong className="text-lg font-medium text-grey-80 mb-5 block">Soft Skills em Destaque</strong>
                                 <Highlights/>
                         </div>
                        </div>

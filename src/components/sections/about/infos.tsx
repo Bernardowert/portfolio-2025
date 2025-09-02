@@ -72,10 +72,7 @@ export function AboutInfo(){
                        </ul>
                         <div className="flex flex-col items-center gap-8 laptop:flex-row laptop:gap-24">
                               <SocialList infos={list}/>
-                              <div className="flex w-full flex-col items-center gap-5 laptop:flex-row">
-                                  <Button styleType="btnPrimary" className="px-10 w-full">Let’s Work</Button>
-                                  <Button styleType="btnPrimary" className="px-10 w-full">Download CV</Button>
-                              </div>
+                              <Button styleType="btnPrimary" className="px-10 w-full">Download CV</Button>
                         </div>
                       </div>
          </div>
