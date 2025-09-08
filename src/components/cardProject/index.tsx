@@ -9,9 +9,11 @@ interface CardProps{
     linkText:string;
     linkUrl:string;
     dataLinks: InfoProps[];
+    projectDescription:string | undefined;
+    tecnologias: string[];
 }
 
-export function CardProject({imageSrc, title, date, linkText, linkUrl, dataLinks}:CardProps){
+export function CardProject({imageSrc, title, date, linkText, linkUrl, dataLinks, projectDescription, tecnologias}:CardProps){
     return(
         <div className="w-full max-w-lg">
                 <div className="w-full relative flex items-center group justify-center overflow-hidden rounded-2xl h-96 laptop:h-imageAbout before:content-[''] before:absolute before:w-full before:h-full before:backdrop-blur-sm before:opacity-0 before:transition-all [&:hover,&:focus]:before:opacity-100 ">
@@ -21,13 +23,24 @@ export function CardProject({imageSrc, title, date, linkText, linkUrl, dataLinks
                         title={`${title}`}
                         className="w-full h-full object-cover"
                         />
-                        <div className="absolute z-10 group-[&:hover,&:focus]:opacity-100 pointer-events-none group-[&:hover,&:focus]:pointer-events-auto opacity-0 transition-opacity ease-linear">
-                            <SocialList infos={dataLinks}/>
+                        <div className="absolute space-y-3.5 z-10 group-[&:hover,&:focus]:opacity-100 pointer-events-none group-[&:hover,&:focus]:pointer-events-auto opacity-0 transition-opacity ease-linear">
+                            <div className="space-y-4">
+                              <span className="block font-medium">{projectDescription}</span>
+                              <strong>Tecnologias usadas:</strong>
+                               <ul className=" flex items-center gap-2 flex-wrap">
+                                    {
+                                       tecnologias.map((item,index) => (
+                                          <li key={index} className="font-bold">{item}</li>
+                                       )) 
+                                    }
+                               </ul>
+                            </div>
+                            <SocialList infos={dataLinks} className="inline-flex border-0"/>
                         </div>
                 </div>
                  <div className="flex items-center justify-between mt-5">
                          <div>
-                              <h3 className="text-xl font-medium text-grey-80 mb-1">{title}</h3>
+                              <h3 className="text-xl font-medium text-grey-80 mb-1 capitalize">{title}</h3>
                               <span className="text-lg text-grey-70">{date}</span>
                          </div>
                          <a href={linkUrl} target="_blank" rel="noopener noreferrer" className="flex items-center gap-2.5 border-b uppercase border-grey-100 pb-1.5 group">

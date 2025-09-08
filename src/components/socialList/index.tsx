@@ -10,13 +10,14 @@ export interface InfoProps{
 }
 interface ListProps{
     infos:InfoProps[];
+    className?:string;
 }
 
 
 
-export function SocialList({infos}:ListProps){
+export function SocialList({infos, className}:ListProps){
     return(
-        <ul className="flex items-center w-full justify-center gap-4 p-2.5 rounded-full border border-dark-12 laptop:w-auto laptop:justify-normal">
+        <ul className={`flex items-center justify-center gap-4 p-2.5 rounded-full border border-dark-12 laptop:w-auto laptop:justify-normal ${className ? className : ''}`}>
               {
                   infos && (
                         infos.map(({icon, href, title}, index) => (
