@@ -4,7 +4,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
 
-export function AosInit(){
+export function AosInitH(){
 
     useEffect(() => {
           AOS.init({
