@@ -13,14 +13,22 @@ interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement>{
     className?:string;
     styleType: btnType;
     onclickFunction?: () => void;
+    isBtn?:boolean;
+    href?:string;
 }
 
-export function Button({children, className, styleType, onclickFunction}:ButtonProps){
+export function Button({children, className, styleType, onclickFunction, isBtn = true, href}:ButtonProps){
     const defaultClass = btnStyles[styleType];
     const combinedClass = twMerge(defaultClass, className);
     return(
-        <button onClick={onclickFunction} className={combinedClass}>
+          isBtn ? (
+              <button onClick={onclickFunction} className={combinedClass}>
            {children}
         </button> 
+          ) : (
+            <a href={href} className={combinedClass}>
+           {children}
+            </a>
+          )
     )
 }
