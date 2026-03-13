@@ -6,7 +6,7 @@ import { Button } from "@/components/buttons";
 
 import star from "@/assets/icons/star.png";
 import linkedin from "@/assets/icons/linkedin.png";
-import facebook from "@/assets/icons/facebook-icon.png";
+import instagram from "@/assets/icons/instagram-icon.png";
 import github from "@/assets/icons/github-icon.png";
 
 
@@ -39,9 +39,9 @@ const list = [
         title:"Linkedin"
      },
      {
-        icon:facebook,
-        href: "https://www.linkedin.com/in/bernardo-almeida-211b05246/",
-        title:"Facebook"
+        icon:instagram,
+        href: "https://www.instagram.com/bernardowertyy?igsh=MWJ3b2Q0M3hrdDVpMw==",
+        title:"Instagram"
      },
      {
         icon:github,

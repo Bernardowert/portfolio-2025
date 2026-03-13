@@ -23,7 +23,7 @@ export function SocialList({infos, className}:ListProps){
                         infos.map(({icon, href, title}, index) => (
                             <li key={index}>
                                 <a href={href} target="_blank" rel="noopener noreferrer" className="w-12 h-12 flex items-center justify-center rounded-full border border-grey-100 bg-dark-12 transition-colors ease-linear [&:hover,&:focus]:bg-dark-06">
-                                    <Image src={icon} alt={`Icone ${title}`} title={title}/>
+                                    <Image src={icon} alt={`Icone ${title}`} title={title} className=" w-5 h-5"/>
                                 </a>
                             </li>
                         ))
