@@ -27,7 +27,7 @@ export function SectionHero(){
                  className="hidden laptop:block laptop:max-w-48 desktop:max-w-full"
                  data-aos="fade-up"
                 />
-                <h2 className="text-2xl uppercase font-semibold tablet:text-4xl max-w-textContact " data-aos="fade-left" data-aos-delay="800">Vamos <Button styleType="btnSecondary" aria-label="Botão para ir para seção de contato"><MoveUpRight size={32} strokeWidth={1} /></Button>  Trabalhar juntos</h2>
+                <h2 className="text-2xl uppercase font-semibold tablet:text-4xl max-w-textContact " data-aos="fade-left" data-aos-delay="800">Vamos <Button styleType="btnSecondary" className="py-2 px-11 laptop:py-4 laptop:px-12" aria-label="Botão para ir para seção de contato"><MoveUpRight strokeWidth={1} className="size-6" /></Button>  Trabalhar juntos</h2>
             </ContainerGRID>
             <MarqueeElement/>
         </section>
