@@ -72,7 +72,7 @@ export function AboutInfo(){
                        </ul>
                         <div className="flex flex-col items-center gap-8 laptop:flex-row laptop:gap-24">
                               <SocialList infos={list}/>
-                              <Button styleType="btnPrimary" isBtn={false} forDownload={true} href="/archives/curriculo-Bernardo-Almeida.pdf" className="px-10 w-full">Download CV</Button>
+                              <Button styleType="btnPrimary" isBtn={false} forDownload={true} href="/archives/curriculo-Bernardo-Almeida.pdf" className="px-10 w-full text-center">Download CV</Button>
                         </div>
                       </div>
          </div>
