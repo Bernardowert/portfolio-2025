@@ -27,7 +27,7 @@ export function Button({children, className, styleType, onclickFunction, isBtn =
            {children}
         </button> 
           ) : (
-            <a href={href} className={combinedClass} {...forDownload && {download:true}}>
+            <a href={href} className={combinedClass} {...forDownload && {download:forDownload}}>
            {children}
             </a>
           )
