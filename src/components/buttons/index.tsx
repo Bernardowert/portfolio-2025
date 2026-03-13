@@ -15,9 +15,10 @@ interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement>{
     onclickFunction?: () => void;
     isBtn?:boolean;
     href?:string;
+    forDownload?:boolean
 }
 
-export function Button({children, className, styleType, onclickFunction, isBtn = true, href}:ButtonProps){
+export function Button({children, className, styleType, onclickFunction, isBtn = true, href, forDownload}:ButtonProps){
     const defaultClass = btnStyles[styleType];
     const combinedClass = twMerge(defaultClass, className);
     return(
@@ -26,7 +27,7 @@ export function Button({children, className, styleType, onclickFunction, isBtn =
            {children}
         </button> 
           ) : (
-            <a href={href} className={combinedClass}>
+            <a href={href} className={combinedClass} {...forDownload && {download:true}}>
            {children}
             </a>
           )
