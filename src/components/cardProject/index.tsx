@@ -16,7 +16,7 @@ interface CardProps{
 export function CardProject({imageSrc, title, date, linkText, linkUrl, dataLinks, projectDescription, tecnologias}:CardProps){
     return(
         <div className="w-full max-w-lg">
-                <div className="w-full relative flex items-center group justify-center overflow-hidden rounded-2xl h-96 laptop:h-imageAbout before:content-[''] before:absolute before:w-full before:h-full before:backdrop-blur-sm before:opacity-0 before:transition-all [&:hover,&:focus]:before:opacity-100 ">
+                <div className="w-full relative flex items-center group justify-center overflow-hidden rounded-2xl h-96 laptop:h-72 before:content-[''] before:absolute before:w-full before:h-full before:backdrop-blur-sm before:opacity-0 before:transition-all [&:hover,&:focus]:before:opacity-100 ">
                         <Image
                         src={imageSrc}
                         alt={`Imagem do projeto ${title}`}
