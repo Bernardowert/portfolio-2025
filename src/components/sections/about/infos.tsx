@@ -55,7 +55,7 @@ export function AboutInfo(){
          <div className="w-full max-w-imageAbout border border-dark-12 rounded-4xl">
                     <div className="p-10  border-b border-dark-12">
                          <Title title="Introdução" />
-                         <p className="tablet:text-lg text-grey-80 mt-5 ">Sou um desenvolvedor full stack Minha expertise abrange desde a arquitetura de sistemas back-end até a criação de interfaces ricas e responsivas no front-end. Ao longo da minha carreira, tenho me dedicado a entregar soluções eficientes, sempre priorizando a performance, segurança e a experiência do usuário.</p>
+                         <p className="tablet:text-lg text-grey-80 mt-5 ">Sou um desenvolvedor full stack com +20 projetos feitos. Minha expertise abrange desde a arquitetura de sistemas back-end até a criação de interfaces ricas e responsivas no front-end. Ao longo da minha carreira, tenho me dedicado a entregar soluções eficientes, sempre priorizando a performance, segurança e a experiência do usuário.</p>
                     </div>
 
                       <div className="p-10 space-y-10">
